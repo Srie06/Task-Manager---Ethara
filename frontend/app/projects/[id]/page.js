@@ -140,6 +140,7 @@ export default function ProjectDetailPage() {
   return (
     <>
       <Navbar />
+      {/* full width layout */}
       <div className="w-full px-6 py-6">
         <div className="mb-6 flex items-center text-sm font-medium text-stripe-textSecondary space-x-2">
           <span className="hover:text-stripe-foreground cursor-pointer" onClick={() => router.push('/projects')}>Projects</span>

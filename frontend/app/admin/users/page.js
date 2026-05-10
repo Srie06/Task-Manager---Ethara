@@ -90,7 +90,8 @@ export default function AdminUsersPage() {
     return (
         <>
             <Navbar />
-            <div className="w-full px-6 py-6 mt-8">
+            {/* full width layout */}
+            <div className="w-full px-6 py-6">
                 <RoleGuard allow={["admin"]}>
                     <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
                         <div>

@@ -81,6 +81,7 @@ export default function ProjectsPage() {
   return (
     <>
       <Navbar />
+      {/* full width layout */}
       <div className="w-full px-6 py-6">
         <div className="flex items-center justify-between mb-8">
           <div>

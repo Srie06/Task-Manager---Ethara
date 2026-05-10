@@ -517,6 +517,7 @@ export default function DashboardPage() {
   return (
     <>
       <Navbar />
+      {/* full width layout */}
       <div className="w-full px-6 py-6">
         {(() => {
           if (role === "admin" || role === "pl") {

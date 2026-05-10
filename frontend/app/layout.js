@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`w-full ${inter.className}`}>
+        {/* full width layout */}
         <main className="w-full">
           {children}
         </main>
