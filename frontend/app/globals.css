@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --page-bg: #F6F9FC;
+    --card-bg: #FFFFFF;
+    --primary-blue: #635BFF;
+    --text-primary: #1A1F36;
+    --text-secondary: #697386;
+    --border-color: #E3E8EE;
+    --success-green: #09825D;
+    --warning-amber: #C44C11;
+    --danger-red: #A41C4E;
+    --card-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+  
+  body {
+    background-color: var(--page-bg);
+    color: var(--text-primary);
+  }
+}
+
+.container-page {
+  @apply mx-auto max-w-6xl px-4 py-6;
+}
