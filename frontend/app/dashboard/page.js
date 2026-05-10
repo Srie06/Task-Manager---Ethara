@@ -68,7 +68,7 @@ function AdminDashboard({ data, role, onPlAction }) {
           <h2 className="text-lg font-bold text-stripe-textPrimary">Projects</h2>
           <Link href="/projects" className="text-sm font-medium text-stripe-blue hover:underline">New Project</Link>
         </div>
-        <div className="overflow-x-auto">
+        <div className="w-full overflow-x-auto">
           <table className="min-w-full text-sm text-left">
             <thead className="bg-[#F8FAFC] text-stripe-textSecondary font-medium border-b border-stripe-border">
               <tr>
@@ -174,7 +174,7 @@ function AdminDashboard({ data, role, onPlAction }) {
         </div>
       )}
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+      <div className="grid grid-cols-2 gap-6 w-full mt-6">
         <div className="rounded-card border border-stripe-border bg-stripe-card shadow-card p-4 min-h-[240px]">
           <h2 className="text-lg font-bold text-stripe-textPrimary mb-4">Task Status</h2>
           <div className="h-64">
@@ -493,9 +493,9 @@ export default function DashboardPage() {
     return (
       <>
         <Navbar />
-        <main className="container-page mt-8">
+        <div className="w-full px-6 py-6">
           <div className="bg-red-50 text-red-600 p-4 rounded border border-red-200">{error}</div>
-        </main>
+        </div>
       </>
     );
   }
@@ -504,12 +504,12 @@ export default function DashboardPage() {
     return (
       <>
         <Navbar />
-        <main className="container-page mt-8">
+        <div className="w-full px-6 py-6">
           <div className="animate-pulse space-y-6">
             <div className="h-10 bg-slate-200 rounded w-1/4"></div>
             <div className="grid grid-cols-4 gap-4"><div className="h-24 bg-slate-200 rounded"></div><div className="h-24 bg-slate-200 rounded"></div></div>
           </div>
-        </main>
+        </div>
       </>
     );
   }
@@ -517,7 +517,7 @@ export default function DashboardPage() {
   return (
     <>
       <Navbar />
-      <main className="container-page pb-12 mt-4 inline-block w-full">
+      <div className="w-full px-6 py-6">
         {(() => {
           if (role === "admin" || role === "pl") {
             return <AdminDashboard data={data} role={role} onPlAction={handlePlAction} />;
@@ -527,7 +527,7 @@ export default function DashboardPage() {
           }
           return <TaskerDashboard data={data} handleSubmitForReview={handleSubmitForReview} />;
         })()}
-      </main>
+      </div>
     </>
   );
 }

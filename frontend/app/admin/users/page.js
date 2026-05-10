@@ -90,7 +90,7 @@ export default function AdminUsersPage() {
     return (
         <>
             <Navbar />
-            <main className="container-page pb-16 mt-8">
+            <div className="w-full px-6 py-6 mt-8">
                 <RoleGuard allow={["admin"]}>
                     <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
                         <div>
@@ -177,7 +177,7 @@ export default function AdminUsersPage() {
                         </div>
                     </div>
                 </RoleGuard>
-            </main>
+            </div>
 
             {/* CREATE / EDIT MODAL */}
             {isModalOpen && (

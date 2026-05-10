@@ -123,12 +123,12 @@ export default function ProjectDetailPage() {
     return (
       <>
         <Navbar />
-        <main className="container-page mt-8">
+        <div className="w-full px-6 py-6">
           <div className="animate-pulse space-y-6">
             <div className="h-24 bg-slate-200 rounded"></div>
             <div className="flex gap-6"><div className="w-2/3 h-64 bg-slate-200 rounded"></div><div className="w-1/3 h-64 bg-slate-200 rounded"></div></div>
           </div>
-        </main>
+        </div>
       </>
     );
   }
@@ -140,7 +140,7 @@ export default function ProjectDetailPage() {
   return (
     <>
       <Navbar />
-      <main className="container-page pb-16">
+      <div className="w-full px-6 py-6">
         <div className="mb-6 flex items-center text-sm font-medium text-stripe-textSecondary space-x-2">
           <span className="hover:text-stripe-foreground cursor-pointer" onClick={() => router.push('/projects')}>Projects</span>
           <ChevronRight className="h-4 w-4" />
@@ -341,7 +341,7 @@ export default function ProjectDetailPage() {
             </div>
           </section>
         </div>
-      </main>
+      </div>
 
       {/* TASK SLIDE-OVER FOR "ADD TASK" (ADMIN ONLY) */}
       {isAddTaskOpen && (

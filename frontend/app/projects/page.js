@@ -81,7 +81,7 @@ export default function ProjectsPage() {
   return (
     <>
       <Navbar />
-      <main className="container-page pb-16">
+      <div className="w-full px-6 py-6">
         <div className="flex items-center justify-between mb-8">
           <div>
             <h1 className="text-3xl font-bold text-stripe-textPrimary tracking-tight">Projects</h1>
@@ -224,7 +224,7 @@ export default function ProjectsPage() {
             </RoleGuard>
           </div>
         )}
-      </main>
+      </div>
     </>
   );
 }
