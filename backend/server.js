@@ -14,8 +14,9 @@ const app = express();
 const corsOptions = {
   origin: [
     'http://localhost:3000',
-    'https://task-manager-ethara-delta.vercel.app'
-  ],
+    'https://task-manager-ethara-delta.vercel.app',
+    process.env.FRONTEND_URL
+  ].filter(Boolean),
   credentials: true
 };
 app.use(cors(corsOptions));
