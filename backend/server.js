@@ -43,7 +43,7 @@ app.use((err, _req, res, _next) => {
   return res.status(status).json({ error: message });
 });
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Backend running on port ${PORT}`);
 });
